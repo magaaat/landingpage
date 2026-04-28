@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biano's | Premium Food Business Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Biano's Logo" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+                Biano's
+            </div>
+            <div class="nav-links">
+                <a href="#about-section">About</a>
+                <a href="#picks-section">POS</a>
+                <a href="#inventory-section">Inventory</a>
+                <a href="#analytics-section">Analytics</a>
+                <a href="#tech-section">Technical</a>
+                <a href="Bianos.apk" class="btn-download" style="padding: 10px 24px; font-size: 0.85rem;" download="BianosApp.apk">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero-section">
+        <div class="container">
+            <h1>The Ultimate Pizza <br>Management System</h1>
+            <p class="tagline">From the kitchen to the counter—manage your orders, ingredients, and profits in one dark-themed, ultra-fast interface.</p>
+            <div class="hero-btns">
+                <a href="Bianos.apk" class="btn-download" download="BianosApp.apk">
+                    <i class="fas fa-rocket"></i> Install Biano's App
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- LOGO TICKER SECTION -->
+    <section class="logo-ticker-section reveal reveal-up">
+        <div class="ticker-wrapper">
+            <div class="ticker-track">
+                <!-- First Set -->
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Biano's Pizza</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Express Delivery</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Premium Quality</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Italian Style</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Since 2026</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Fresh Ingredients</span></div>
+                <!-- Duplicate Set for Infinite Loop -->
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Biano's Pizza</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Express Delivery</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Premium Quality</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Italian Style</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Since 2026</span></div>
+                <div class="ticker-item"><img src="images/logo.png" alt="Biano's Logo"><span>Fresh Ingredients</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW SECTION -->
+    <section id="about-section" class="overview-section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content reveal reveal-left">
+                    <span class="section-subtitle">Project Purpose</span>
+                    <h2 class="section-title">Revolutionizing Pizza Business</h2>
+                    <p class="overview-text">
+                        Biano's is a comprehensive mobile management solution designed specifically for pizza establishments. Our goal is to bridge the gap between complex industrial systems and small-to-medium enterprises, providing high-end analytics, inventory management, and a streamlined POS in the palm of your hand.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Efficiency:</strong> Reduce order processing time by 40%.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Accuracy:</strong> Real-time inventory tracking prevents stockouts.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Growth:</strong> Detailed analytics to identify best-selling products.</li>
+                    </ul>
+                </div>
+                <div class="overview-visual reveal reveal-right">
+                    <div class="mockup-container">
+                        <img src="images/PACK.jpg" alt="Biano's Project Purpose" class="floating-mockup">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POINT OF SALES SECTION (CAROUSEL) -->
+    <section id="picks-section" class="popular-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal reveal-up">
+                <span class="section-subtitle">Terminal Interface</span>
+                <h2 class="section-title">Point of Sales</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Streamlined order processing and menu management at your fingertips.</p>
+            </div>
+
+            <div class="carousel-wrapper reveal reveal-zoom delay-1">
+                <div class="carousel-container">
+                    <button class="carousel-nav prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    
+                    <div class="carousel-track">
+                        <!-- Hawaiian -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">Best Seller</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱249</div>
+                                <img src="images/HawaiianPizza.png" alt="Hawaiian Pizza">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Hawaiian</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                                </div>
+                                <p class="flavor-notes">Classic sweet & savory ham and pineapple.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>11 inches - ₱249</option>
+                                            <option>9 inches - ₱179</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Full House -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">Chef's Choice</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱299</div>
+                                <img src="images/FullHouse.png" alt="Full House Pizza">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Full House</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                                </div>
+                                <p class="flavor-notes">Loaded with all your favorite premium toppings.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>11 inches - ₱299</option>
+                                            <option>9 inches - ₱199</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Meatlovers -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">Protein Rich</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱299</div>
+                                <img src="images/Meatlovers.png" alt="Meatlovers Pizza">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Meatlovers</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 5.0</div>
+                                </div>
+                                <p class="flavor-notes">A heavy mix of bacon, ham, and pepperoni.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>Regular - ₱299</option>
+                                            <option>Family - ₱449</option>
+                                            <option>Party - ₱599</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pepperoni -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">Most Popular</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱249</div>
+                                <img src="images/Pepperoni.png" alt="Pepperoni Pizza">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Pepperoni</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 4.7</div>
+                                </div>
+                                <p class="flavor-notes">Generous layers of classic spicy pepperoni.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>11 inches - ₱249</option>
+                                            <option>9 inches - ₱179</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tuna Melt -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">Sea Choice</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱279</div>
+                                <img src="images/TunaMelt.png" alt="Tuna Melt Pizza">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Tuna Melt</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 4.6</div>
+                                </div>
+                                <p class="flavor-notes">Perfect blend of tuna chunks and melted cheese.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>11 inches - ₱279</option>
+                                            <option>9 inches - ₱189</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bacon Garlic Ranch -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">New Arrival</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱279</div>
+                                <img src="images/BaconGarlicRanch.png" alt="Bacon Garlic Ranch">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Bacon Garlic Ranch</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                                </div>
+                                <p class="flavor-notes">Creamy ranch base with smoky bacon bits.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>11 inches - ₱279</option>
+                                            <option>9 inches - ₱189</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Beef and Mushroom -->
+                        <div class="pick-card carousel-item">
+                            <div class="card-badge">Savory Mix</div>
+                            <div class="img-container">
+                                <div class="price-tag">₱279</div>
+                                <img src="images/BeefandMushroom.png" alt="Beef and Mushroom">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-header-info">
+                                    <h3>Beef and Mushroom</h3>
+                                    <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                                </div>
+                                <p class="flavor-notes">Hearty beef chunks and farm-fresh mushrooms.</p>
+                                <div class="pos-controls">
+                                    <div class="control-group">
+                                        <label>Size</label>
+                                        <select class="pos-select">
+                                            <option>11 inches - ₱279</option>
+                                            <option>9 inches - ₱189</option>
+                                        </select>
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Crust</label>
+                                        <select class="pos-select">
+                                            <option>Thin Crust</option>
+                                            <option>Thick Crust</option>
+                                            <option>Cheese Stuffed</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-add-cart">
+                                        <i class="fas fa-cart-plus"></i> Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-nav next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INVENTORY SECTION (DARK THEME) -->
+    <section id="inventory-section" class="inventory-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal reveal-up">
+                <span class="section-subtitle">Supply Management</span>
+                <h2 class="section-title">Real-Time Inventory</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Never run out of ingredients with our automated stock tracking and low-level alerts.</p>
+            </div>
+
+            <div class="inventory-dashboard">
+                <div class="inventory-sidebar reveal reveal-left delay-1">
+                    <div class="inventory-card search-card">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search ingredients...">
+                        </div>
+                        <button class="btn-add-stock">
+                            <i class="fas fa-plus"></i> Add New Item
+                        </button>
+                    </div>
+                    <div class="inventory-stats">
+                        <div class="inv-stat-item reveal reveal-left delay-2">
+                            <span class="label">Total Items</span>
+                            <span class="value">124</span>
+                        </div>
+                        <div class="inv-stat-item low-stock reveal reveal-left delay-3">
+                            <span class="label">Low Stock Alerts</span>
+                            <span class="value">3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventory-main reveal reveal-right delay-2">
+                    <div class="inventory-table-header">
+                        <span class="col-name">Ingredient Name</span>
+                        <span class="col-stock">Current Stock</span>
+                        <span class="col-status">Status</span>
+                    </div>
+                    <div class="inventory-list">
+                        <!-- Dough -->
+                        <div class="inventory-row">
+                            <div class="item-info">
+                                <div class="item-icon"><i class="fas fa-bread-slice"></i></div>
+                                <div>
+                                    <span class="item-name">Fresh Dough Balls</span>
+                                    <span class="item-category">Base Ingredients</span>
+                                </div>
+                            </div>
+                            <div class="item-stock">
+                                <span class="stock-num">142</span>
+                                <span class="stock-unit">Units</span>
+                                <div class="stock-progress"><div class="progress-fill optimal" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="item-status">
+                                <span class="status-pill in-stock">In Stock</span>
+                            </div>
+                        </div>
+
+                        <!-- Cheese -->
+                        <div class="inventory-row">
+                            <div class="item-info">
+                                <div class="item-icon"><i class="fas fa-cheese"></i></div>
+                                <div>
+                                    <span class="item-name">Mozzarella Cheese</span>
+                                    <span class="item-category">Toppings</span>
+                                </div>
+                            </div>
+                            <div class="item-stock">
+                                <span class="stock-num">2.4</span>
+                                <span class="stock-unit">kg</span>
+                                <div class="stock-progress"><div class="progress-fill low-stock" style="width: 15%;"></div></div>
+                            </div>
+                            <div class="item-status">
+                                <span class="status-pill low-stock">Low Stock</span>
+                            </div>
+                        </div>
+
+                        <!-- Pepperoni -->
+                        <div class="inventory-row">
+                            <div class="item-info">
+                                <div class="item-icon"><i class="fas fa-meat"></i></div>
+                                <div>
+                                    <span class="item-name">Pepperoni Slices</span>
+                                    <span class="item-category">Toppings</span>
+                                </div>
+                            </div>
+                            <div class="item-stock">
+                                <span class="stock-num">5.8</span>
+                                <span class="stock-unit">kg</span>
+                                <div class="stock-progress"><div class="progress-fill low-stock" style="width: 35%;"></div></div>
+                            </div>
+                            <div class="item-status">
+                                <span class="status-pill low-stock">Low Stock</span>
+                            </div>
+                        </div>
+
+                        <!-- Sauce -->
+                        <div class="inventory-row">
+                            <div class="item-info">
+                                <div class="item-icon"><i class="fas fa-wine-bottle"></i></div>
+                                <div>
+                                    <span class="item-name">Signature Tomato Sauce</span>
+                                    <span class="item-category">Base Ingredients</span>
+                                </div>
+                            </div>
+                            <div class="item-stock">
+                                <span class="stock-num">12.5</span>
+                                <span class="stock-unit">Liters</span>
+                                <div class="stock-progress"><div class="progress-fill in-stock" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="item-status">
+                                <span class="status-pill in-stock">In Stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANALYTICS SECTION -->
+    <section id="analytics-section" class="analytics-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal reveal-up">
+                <span class="section-subtitle">Business Intelligence</span>
+                <h2 class="section-title">Sales Analytics</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Data-driven insights to help you make informed decisions and optimize your menu for maximum profit.</p>
+            </div>
+
+            <div class="analytics-grid">
+                <!-- KPI Cards -->
+                <div class="kpi-container reveal reveal-up delay-1">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-wallet"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Daily Revenue</span>
+                            <span class="stat-val">₱12,450</span>
+                            <span class="stat-trend up"><i class="fas fa-arrow-up"></i> 12.5%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">Total Orders</span>
+                            <span class="stat-val">84</span>
+                            <span class="stat-trend up"><i class="fas fa-arrow-up"></i> 8.2%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-label">New Customers</span>
+                            <span class="stat-val">18</span>
+                            <span class="stat-trend up"><i class="fas fa-arrow-up"></i> 5.4%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Analytics Content -->
+                <div class="analytics-main-content">
+                    <!-- Weekly Performance Chart -->
+                    <div class="analytics-card chart-card reveal reveal-left delay-1">
+                        <div class="card-header">
+                            <h3>Weekly Revenue Performance</h3>
+                            <div class="card-actions">
+                                <span class="period-tag">Last 7 Days</span>
+                            </div>
+                        </div>
+                        <div class="chart-visual">
+                            <div class="chart-bar" data-label="Mon"><div class="chart-fill" style="height: 40%;"></div><span class="bar-value">₱4k</span></div>
+                            <div class="chart-bar" data-label="Tue"><div class="chart-fill" style="height: 65%;"></div><span class="bar-value">₱6.5k</span></div>
+                            <div class="chart-bar" data-label="Wed"><div class="chart-fill" style="height: 50%;"></div><span class="bar-value">₱5k</span></div>
+                            <div class="chart-bar active" data-label="Thu"><div class="chart-fill" style="height: 85%;"></div><span class="bar-value">₱8.5k</span></div>
+                            <div class="chart-bar" data-label="Fri"><div class="chart-fill" style="height: 95%;"></div><span class="bar-value">₱9.5k</span></div>
+                            <div class="chart-bar" data-label="Sat"><div class="chart-fill" style="height: 70%;"></div><span class="bar-value">₱7k</span></div>
+                            <div class="chart-bar" data-label="Sun"><div class="chart-fill" style="height: 60%;"></div><span class="bar-value">₱6k</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Top Selling Table -->
+                    <div class="analytics-card table-card reveal reveal-right delay-2">
+                        <div class="card-header">
+                            <h3>Top Selling Flavors</h3>
+                            <button class="btn-text">View All</button>
+                        </div>
+                        <div class="top-products-list">
+                            <div class="product-row">
+                                <div class="prod-info">
+                                    <img src="images/HawaiianPizza.png" alt="Hawaiian">
+                                    <span>Hawaiian</span>
+                                </div>
+                                <div class="prod-sales">
+                                    <span class="sales-count">342 Sold</span>
+                                    <div class="mini-progress"><div class="fill" style="width: 95%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="product-row">
+                                <div class="prod-info">
+                                    <img src="images/Pepperoni.png" alt="Pepperoni">
+                                    <span>Pepperoni</span>
+                                </div>
+                                <div class="prod-sales">
+                                    <span class="sales-count">285 Sold</span>
+                                    <div class="mini-progress"><div class="fill" style="width: 80%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="product-row">
+                                <div class="prod-info">
+                                    <img src="images/FullHouse.png" alt="Full House">
+                                    <span>Full House</span>
+                                </div>
+                                <div class="prod-sales">
+                                    <span class="sales-count">198 Sold</span>
+                                    <div class="mini-progress"><div class="fill" style="width: 65%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP SCREENSHOTS GALLERY (3D INFINITE SCROLL) -->
+    <section id="screenshots-section" class="screenshots-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal reveal-up">
+                <span class="section-subtitle">Visual Tour</span>
+                <h2 class="section-title">App Screenshots</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Experience the fluid 3D interface of our mobile application through this interactive gallery.</p>
+            </div>
+            
+            <div class="gallery-3d-wrapper reveal reveal-up delay-1">
+                <div class="gallery-3d-container">
+                    <div class="gallery-3d-track">
+                        <div class="gallery-item"><img src="images/1.jpg" alt="Screen 1"></div>
+                        <div class="gallery-item"><img src="images/2.jpg" alt="Screen 2"></div>
+                        <div class="gallery-item"><img src="images/3.jpg" alt="Screen 3"></div>
+                        <div class="gallery-item"><img src="images/4.jpg" alt="Screen 4"></div>
+                        <div class="gallery-item"><img src="images/5.jpg" alt="Screen 5"></div>
+                        <div class="gallery-item"><img src="images/6.jpg" alt="Screen 6"></div>
+                        <div class="gallery-item"><img src="images/7.jpg" alt="Screen 7"></div>
+                        <div class="gallery-item"><img src="images/8.jpg" alt="Screen 8"></div>
+                        <div class="gallery-item"><img src="images/9.jpg" alt="Screen 9"></div>
+                        <div class="gallery-item"><img src="images/10.jpg" alt="Screen 10"></div>
+                        <div class="gallery-item"><img src="images/11.jpg" alt="Screen 11"></div>
+                        <div class="gallery-item"><img src="images/12.jpg" alt="Screen 12"></div>
+                        <!-- Duplicates for infinite scroll -->
+                        <div class="gallery-item"><img src="images/1.jpg" alt="Screen 1"></div>
+                        <div class="gallery-item"><img src="images/2.jpg" alt="Screen 2"></div>
+                        <div class="gallery-item"><img src="images/3.jpg" alt="Screen 3"></div>
+                        <div class="gallery-item"><img src="images/4.jpg" alt="Screen 4"></div>
+                        <div class="gallery-item"><img src="images/5.jpg" alt="Screen 5"></div>
+                        <div class="gallery-item"><img src="images/6.jpg" alt="Screen 6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL DETAILS & DOCUMENTATION SECTION -->
+    <section id="tech-section" class="tech-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal reveal-up">
+                <span class="section-subtitle">Developer Insights</span>
+                <h2 class="section-title">Technical Details</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card reveal reveal-left">
+                    <div class="tech-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Tech Stack</h3>
+                    <ul class="tech-list">
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JS</li>
+                        <li><strong>Mobile:</strong> Android Studio (Java)</li>
+                        <li><strong>Icons:</strong> Font Awesome 6.0</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card reveal reveal-up">
+                    <div class="tech-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3>Architecture</h3>
+                    <p>Clean, modular design separating the POS interface, Inventory database, and Analytics engine for maximum speed.</p>
+                </div>
+
+                <div class="tech-card reveal reveal-up">
+                    <div class="tech-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Dev Process</h3>
+                    <p>Iterative development using Agile methodology: from UI prototyping to logic implementation and final 3D integration.</p>
+                </div>
+
+                <div class="tech-card reveal reveal-right">
+                    <div class="tech-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h3>Documentation</h3>
+                    <div class="doc-btns">
+                        <a href="SystemGuide.pdf" class="btn-doc" target="_blank"><i class="fas fa-file-pdf"></i> System Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Biano's Logo">
+                        Biano's
+                    </div>
+                    <p class="brand-desc">Elevating the pizza experience with premium ingredients and innovative management solutions. The future of Italian-inspired pizza business starts here.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#picks-section">POS</a></li>
+                        <li><a href="#inventory-section">Inventory</a></li>
+                        <li><a href="#analytics-section">Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="footer-hours">
+                    <h4>Store Hours</h4>
+                    <ul>
+                        <li><span>Mon - Sun:</span> 09:00 AM - 07:00 PM</li>
+                        <li><span class="status-open">Open Now</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Sebastian St, Malaybalay City,<br>Bukidnon, Philippines</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+63 906 191 9155</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>bianos@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Biano's Pizza POS. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT MODAL / POPUP -->
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img id="modal-pizza-img" src="" alt="Pizza">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-pizza-name">Pizza Name</h2>
+                    <div class="modal-price" id="modal-pizza-price">₱0.00</div>
+                    <p id="modal-pizza-desc" class="modal-description">Detailed description of the pizza goes here.</p>
+                    
+                    <div class="modal-options">
+                        <div class="option-group">
+                            <label>Select Size</label>
+                            <div class="size-chips">
+                                <button class="size-chip active" data-price-mod="1">9 inches</button>
+                                <button class="size-chip" data-price-mod="1.5">11 inches</button>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <label>Special Instructions</label>
+                            <textarea placeholder="e.g. No onions, extra cheese..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <span class="qty-num">1</span>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="btn-confirm-order">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.carousel-item');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentIndex = 1; // Start with the second item active
+
+            function updateCarousel() {
+                items.forEach((item, index) => {
+                    item.classList.remove('active', 'prev', 'next', 'prev-hidden', 'next-hidden');
+                    
+                    if (index === currentIndex) {
+                        item.classList.add('active');
+                    } else if (index === (currentIndex - 1 + items.length) % items.length) {
+                        item.classList.add('prev');
+                    } else if (index === (currentIndex + 1) % items.length) {
+                        item.classList.add('next');
+                    } else if (index < currentIndex) {
+                        item.classList.add('prev-hidden');
+                    } else {
+                        item.classList.add('next-hidden');
+                    }
+                });
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+
+            // Initialize carousel
+            updateCarousel();
+
+            // Intersection Observer for Scroll Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: Unobserve after animating
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal');
+            revealElements.forEach(el => observer.observe(el));
+
+            // Modal Logic
+            const modal = document.getElementById('product-modal');
+            const closeModal = document.querySelector('.close-modal');
+            const addCartBtns = document.querySelectorAll('.btn-add-cart');
+            
+            // Modal Elements to update
+            const modalImg = document.getElementById('modal-pizza-img');
+            const modalName = document.getElementById('modal-pizza-name');
+            const modalPrice = document.getElementById('modal-pizza-price');
+            const modalDesc = document.getElementById('modal-pizza-desc');
+
+            addCartBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const card = e.target.closest('.carousel-item');
+                    const name = card.querySelector('h3').innerText;
+                    const price = card.querySelector('.price').innerText;
+                    const imgSrc = card.querySelector('img').src;
+                    const desc = card.querySelector('.flavor-notes').innerText;
+
+                    modalName.innerText = name;
+                    modalPrice.innerText = price;
+                    modalImg.src = imgSrc;
+                    modalDesc.innerText = "Enjoy our signature " + name + ". " + desc;
+
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scroll
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            // Close on click outside
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Quantity Selector
+            const qtyNum = document.querySelector('.qty-num');
+            document.querySelector('.plus').addEventListener('click', () => {
+                qtyNum.innerText = parseInt(qtyNum.innerText) + 1;
+            });
+            document.querySelector('.minus').addEventListener('click', () => {
+                if(parseInt(qtyNum.innerText) > 1) {
+                    qtyNum.innerText = parseInt(qtyNum.innerText) - 1;
+                }
+            });
+
+            // Size Chips
+            const sizeChips = document.querySelectorAll('.size-chip');
+            sizeChips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    sizeChips.forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
