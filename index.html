@@ -373,14 +373,30 @@
 
             <div class="inventory-dashboard">
                 <div class="inventory-sidebar reveal reveal-left delay-1">
-                    <div class="inventory-card search-card">
-                        <div class="search-input-wrapper">
-                            <i class="fas fa-search"></i>
-                            <input type="text" placeholder="Search ingredients...">
+                    <div class="inventory-card categories-card">
+                        <h4>Ingredient Categories</h4>
+                        <div class="categories-list">
+                            <div class="category-item">
+                                <i class="fas fa-bread-slice"></i>
+                                <span>Base Ingredients</span>
+                            </div>
+                            <div class="category-item">
+                                <i class="fas fa-cheese"></i>
+                                <span>Cheeses</span>
+                            </div>
+                            <div class="category-item">
+                                <i class="fas fa-drumstick-bite"></i>
+                                <span>Meats</span>
+                            </div>
+                            <div class="category-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Vegetables</span>
+                            </div>
+                            <div class="category-item">
+                                <i class="fas fa-pepper-hot"></i>
+                                <span>Sauces</span>
+                            </div>
                         </div>
-                        <button class="btn-add-stock">
-                            <i class="fas fa-plus"></i> Add New Item
-                        </button>
                     </div>
                     <div class="inventory-stats">
                         <div class="inv-stat-item reveal reveal-left delay-2">
@@ -624,6 +640,39 @@
         </div>
     </section>
 
+    <!-- TEAM SECTION -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title-wrapper reveal reveal-up">
+                <span class="section-subtitle">Meet the Team</span>
+                <h2 class="section-title">Our Developers</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member reveal reveal-left">
+                    <img src="images/alex.jpg" alt="Alexander John">
+                    <h3>Abarabar, Alexander John</h3>
+                    <p>QA / System Tester</p>
+                </div>
+                <div class="team-member reveal reveal-up">
+                    <img src="images/tranxterence.jpg" alt="Tranx Terence">
+                    <h3>Balaba, Tranx Terence</h3>
+                    <p>Programmer / Backend Developer</p>
+                </div>
+                <div class="team-member reveal reveal-up">
+                    <img src="images/ira.jpg" alt="Ira Johnna T.">
+                    <h3>Canastra, Ira Johnna T.</h3>
+                    <p>Business Analyst / Documentation Lead</p>
+                </div>
+                <div class="team-member reveal reveal-right">
+                    <img src="images/kimverly.jpg" alt="Kimverly">
+                    <h3>Suelo, Kimverly</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- TECHNICAL DETAILS & DOCUMENTATION SECTION -->
     <section id="tech-section" class="tech-section">
         <div class="container">
@@ -660,7 +709,7 @@
                     <div class="tech-icon"><i class="fas fa-file-pdf"></i></div>
                     <h3>Documentation</h3>
                     <div class="doc-btns">
-                        <a href="SystemGuide.pdf" class="btn-doc" target="_blank"><i class="fas fa-file-pdf"></i> System Guide</a>
+                        <button class="btn-doc"><i class="fas fa-file-pdf"></i> System Guide</button>
                     </div>
                 </div>
             </div>
@@ -773,9 +822,123 @@
         </div>
     </div>
 
+    <!-- SYSTEM GUIDE MODAL -->
+    <div id="system-guide-modal" class="modal-overlay">
+        <div class="modal-content guide-modal-content">
+            <button class="close-modal" onclick="closeSystemGuideModal()">&times;</button>
+            <h2>System Guide</h2>
+            <div class="guide-text">
+                <h3>System Documentation: Biano's Pizza Management App</h3>
+                <p><strong>Date:</strong> October 2026</p>
+                <p><strong>Project Name:</strong> Biano's Pizza Management App</p>
+                <p><strong>Document Version:</strong> 1.0</p>
+                <p><strong>Classification:</strong> Academic / Technical Submission</p>
+
+                <h4>1. PROJECT OVERVIEW</h4>
+                <h5>1.1 Purpose</h5>
+                <p>Biano's Pizza Management App is a specialized mobile solution designed to streamline the operations of pizza-centric food businesses. It serves as an all-in-one ecosystem that integrates a Point-of-Sale (POS) terminal with a dynamic inventory tracking system and a sales intelligence engine. The primary goal is to provide business owners with granular control over their resources while maintaining a fast, consumer-friendly ordering process.</p>
+
+                <h5>1.2 Problem Solved</h5>
+                <p>Small-to-medium pizza outlets often struggle with the disconnect between front-end sales and back-end supplies. Traditional manual ledger-keeping is prone to human error, leading to ingredient shortages (e.g., running out of dough or cheese during peak hours) and unaccounted-revenue. This application automates the "ingredient-to-order" logic, ensuring that every sale accurately reflects in the inventory stock levels.</p>
+
+                <h5>1.3 Key Value Proposition</h5>
+                <ul>
+                    <li><strong>Efficiency:</strong> Reduces order processing time through an intuitive touch interface.</li>
+                    <li><strong>Accuracy:</strong> Features automated ingredient deduction (e.g., deducting specific grams of cheese per pizza size).</li>
+                    <li><strong>Growth:</strong> Provides data-driven insights through analytics, allowing managers to identify top-performing products and peak sales periods.</li>
+                </ul>
+
+                <h4>2. USER INTERFACE & FEATURES</h4>
+                <h5>2.1 POS Terminal (Point of Sale)</h5>
+                <ul>
+                    <li>The POS interface is designed for high-velocity environments.</li>
+                    <li><strong>Product Selection:</strong> Users can browse through categories (Pizza, Drinks, Sides) via a smooth navigation bar.</li>
+                    <li><strong>Customization Workflow:</strong> Upon selecting a flavor (e.g., Hawaiian, Pepperoni), a dialog prompts the user to select sizes (9" or 11") and crust types.</li>
+                    <li><strong>Add-on Logic:</strong> Supports real-time addition of extra toppings (e.g., extra Mozzarella), which dynamically updates the total price and the linked inventory requirements.</li>
+                    <li><strong>Cart Management:</strong> A persistent bottom bar tracks the number of items and the running total, allowing for quick confirmation and checkout.</li>
+                </ul>
+
+                <h5>2.2 Inventory Management</h5>
+                <ul>
+                    <li>The system features a "Smart-Sync" inventory engine.</li>
+                    <li><strong>Ingredient-Level Tracking:</strong> Unlike standard POS systems, this app tracks raw materials. A single pizza sale triggers a background deduction of specific units (e.g., 1x Dough Ball, 50g Cheese, 30g Sauce).</li>
+                    <li><strong>Automated Alerts:</strong> The system uses a color-coded status indicator:</li>
+                    <ul>
+                        <li><strong>Healthy (Green):</strong> Sufficient stock.</li>
+                        <li><strong>Warning (Orange):</strong> Stock falling below the threshold.</li>
+                        <li><strong>Critical (Red):</strong> Immediate restock required; system prevents further sales of linked products.</li>
+                    </ul>
+                </ul>
+
+                <h5>2.3 Sales Analytics</h5>
+                <ul>
+                    <li>The Analytics module transforms raw transaction data into visual business intelligence.</li>
+                    <li><strong>Visual Dashboards:</strong> Utilizing graphical components, the app displays bar charts representing weekly revenue trends.</li>
+                    <li><strong>Performance Metrics:</strong> Displays "Top-Selling Flavors" and "Daily Order Volume" to help managers optimize their menu and staffing.</li>
+                </ul>
+
+                <h4>3. TECHNICAL SPECIFICATIONS</h4>
+                <h5>3.1 Tech Stack & Dependencies</h5>
+                <p><strong>IDE:</strong> Android Studio<br>
+                <strong>Languages:</strong> Java (Core Logic), Kotlin (v2.2.10)<br>
+                <strong>UI Framework:</strong> XML with Material Design 3 (com.google.android.material:material:1.13.0)<br>
+                <strong>Database:</strong> SQLite (Local Persistence)</p>
+
+                <p><strong>Core Libraries:</strong></p>
+                <ul>
+                    <li>androidx.appcompat:appcompat:1.7.1</li>
+                    <li>androidx.activity:activity:1.12.4</li>
+                    <li>com.github.bumptech.glide:glide:4.16.0 (Image Loading)</li>
+                    <li>com.github.PhilJay:MPAndroidChart:v3.1.0 (Analytics Charts)</li>
+                    <li>com.github.f0ris.sweetalert:library:1.6.2 (Feedback Dialogs)</li>
+                    <li>io.github.muddz:styleabletoast:2.4.0 (UI Notifications)</li>
+                    <li>com.itextpdf:itext7-core:7.2.5 (PDF Report Generation)</li>
+                    <li>com.github.DantSu:ESCPOS-ThermalPrinter-Android:3.3.0 (Receipt Printing)</li>
+                    <li>com.google.firebase:firebase-bom:33.1.1 (Messaging, Analytics, Auth)</li>
+                </ul>
+
+                <h5>3.2 Architecture</h5>
+                <ol>
+                    <li>The application follows a Modular Monolith architecture:</li>
+                    <li><strong>UI Layer:</strong> Handles user interactions and responsive layouts.</li>
+                    <li><strong>Business Logic Layer:</strong> Manages the complex "Pizza-to-Ingredient" deduction algorithms.</li>
+                    <li><strong>Data Access Layer:</strong> A robust DatabaseHelper class manages the SQLite lifecycle, ensuring data integrity during concurrent read/write operations.</li>
+                </ol>
+
+                <h5>3.3 Development Process</h5>
+                <p>The project utilized an Iterative Design Process. Development focused heavily on a "Mobile-First" approach, ensuring that touch targets are optimized for fast-paced kitchen environments. Key focus areas included responsive UI design and a card-based menu system.</p>
+
+                <h4>4. USER GUIDE</h4>
+                <h5>4.1 Cashier Instructions (Processing an Order)</h5>
+                <ol>
+                    <li><strong>Login:</strong> Enter the authorized credentials to access the POS Terminal.</li>
+                    <li><strong>Select Item:</strong> Tap a pizza flavor from the menu grid.</li>
+                    <li><strong>Configure Size:</strong> Choose between 9" and 11" in the popup dialog. Add any requested toppings.</li>
+                    <li><strong>Review Cart:</strong> Verify the items in the bottom cart bar.</li>
+                    <li><strong>Checkout:</strong> Tap "Confirm Order." Enter the customer’s name and select "Complete Sale." The inventory will update automatically.</li>
+                </ol>
+
+                <h5>4.2 Manager Instructions (Reports & Stock)</h5>
+                <ol>
+                    <li><strong>Check Inventory:</strong> Navigate to the "Inventory" tab. View the "Status" column for any "Critical" or "Low Stock" alerts.</li>
+                    <li><strong>Update Stock:</strong> To restock, tap the "Add Stock" button, select the ingredient, and input the new quantity.</li>
+                    <li><strong>View Reports:</strong> Navigate to "Sales Analytics." Use the visual charts to view revenue for specific periods.</li>
+                    <li><strong>Export Data:</strong> Use the export feature to generate professional PDF reports for auditing.</li>
+                </ol>
+
+                <h4>5. INSTALLATION GUIDE</h4>
+                <ol>
+                    <li><strong>Transfer APK:</strong> Copy the Bianos.apk file to your Android device’s internal storage.</li>
+                    <li><strong>Enable Unknown Sources:</strong> Go to Settings > Security and enable "Install Unknown Apps".</li>
+                    <li><strong>Execute Installation:</strong> Open your File Manager, locate Bianos.apk, tap it, and select "Install".</li>
+                    <li><strong>Permissions:</strong> Upon launch, grant permissions for Storage and Bluetooth to enable reports and printing.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('.carousel-item');
+        const items = document.querySelectorAll('.carousel-item');
             const prevBtn = document.querySelector('.prev-btn');
             const nextBtn = document.querySelector('.next-btn');
             let currentIndex = 1; // Start with the second item active
@@ -872,6 +1035,28 @@
                 }
             });
 
+            // System Guide Modal Logic
+            function openSystemGuideModal() {
+                document.getElementById('system-guide-modal').classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeSystemGuideModal() {
+                document.getElementById('system-guide-modal').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            // Close system guide modal on click outside
+            window.addEventListener('click', (e) => {
+                const systemGuideModal = document.getElementById('system-guide-modal');
+                if (e.target === systemGuideModal) {
+                    closeSystemGuideModal();
+                }
+            });
+
+            // System Guide Button
+            document.querySelector('.btn-doc').addEventListener('click', openSystemGuideModal);
+
             // Quantity Selector
             const qtyNum = document.querySelector('.qty-num');
             document.querySelector('.plus').addEventListener('click', () => {
@@ -891,7 +1076,6 @@
                     chip.classList.add('active');
                 });
             });
-        });
     </script>
 
 </body>
